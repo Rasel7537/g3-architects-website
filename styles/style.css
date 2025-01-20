@@ -7,3 +7,206 @@
   font-weight:400;
   font-style: normal;
 }
+
+/* shared styles */
+.display-flex{
+  display: flex;
+
+}
+
+/* text color  */
+.dark-1{
+  color: #131313;
+}
+.dark-2{
+  color: #424242;
+}
+.dark-3{
+  color: #727272;
+}
+
+
+/* header styles */
+
+.head-color{
+  background-color: rgba(255, 144, 14, 0.1);
+ 
+}
+
+
+
+/* navbar related styles */
+.brand{
+font-weight: 400;
+font-size: 3rem;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.nav-links{
+  /* display: flex; aita diyao kora jai aber shared styles diya kora jai.*/
+  
+}
+.nav-item{
+  list-style: none;
+  margin-right: 30px;
+  
+}
+
+.nav-link{
+text-decoration: none;
+
+}
+/* navbar & banner max-width problem */
+  /* .navbar{
+  max-width: 1440px; 
+  margin: 0 auto; 
+ 
+
+ }  */
+
+ .banner-img , .navbar{
+  max-width: 85%; 
+  margin: 0 auto; 
+   /* px dile hbe na max with % use kote hbe  */
+ }
+ .banner-img >img{
+
+  width: 100%;
+ }
+
+
+/* banner-style */
+.banner-content{
+  max-width: 862px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.banner-title{
+  font-weight: 400;
+  font-size:4rem ;
+}
+
+/* btn-part */
+.btn-1{
+  background-color: rgb(255, 144, 14);
+  color: white;
+  padding: 20px 25px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-top: 36px;
+
+}
+.banner-img{
+  width: 100%;
+}
+
+
+/* main style part-1 start  */
+main{
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+.teams{
+  display: flex;
+  align-items: center;
+
+}
+
+.teams-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) ;
+  gap: 24px;
+  margin-top: 130px;
+  /* padding-right: 105px; */
+}
+.our-features{
+  margin-left: 130px;
+  max-width: 537px;
+}
+
+.span-1{
+  color: #727272;
+  font-weight: 400;
+  font-size: 2.8rem;
+
+}
+.span-2{
+  color: black;
+  font-weight: 400;
+  font-size: 2.8rem;
+}
+.span-3{
+  color: #FF900E;
+  font-weight: 400;
+  font-size: 2.8rem;
+}
+
+.btn-2{
+  margin-top: 32px;
+}
+
+/* main style part-1 end */
+
+
+
+
+/* main style part-2 start */
+.secoend-part-heading{
+ font-size: 2.81rem;
+ font-weight: 400;
+ margin-bottom: 24px;
+}
+.secoend-part-container{
+  
+}
+
+/* main style part-2 end */
+
+
+/* responsive media Qeary for small device and nav and banner part */
+@media screen and (max-width:567px) {
+  .display-flex{
+    flex-direction: column;
+  }
+  .navbar{
+    flex-direction: column;
+  }
+
+  /* responsive for main part-1 */
+  .teams{
+    flex-direction: column;
+  }
+
+  .teams-container{
+    grid-template-columns: repeat( 1,  1fr);
+  }
+
+  .our-features{
+    margin-left:25px ;
+  }
+}
+
+/* medium device */
+@media screen and (min-width: 567px) and (max-width:992px) {
+
+  /* problem for navbar and banner */
+
+
+  
+  /* responsive for main part-1 */
+  .teams{
+    flex-direction: column;
+  }
+  .our-features{
+    margin-left: 50px;
+  }
+
+}
